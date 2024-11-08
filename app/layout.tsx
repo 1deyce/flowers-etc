@@ -3,6 +3,8 @@ import { Catamaran } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Nav from "@/components/shared/Nav";
+import Footer from "@/components/shared/Footer";
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
     title: "Flowers Etc.",
@@ -25,6 +27,8 @@ export default function RootLayout({
             >
                 <Nav />
                 {children}
+                <Toaster />
+                <Footer />
             </body>
         </html>
     );

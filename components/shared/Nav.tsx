@@ -203,7 +203,7 @@ const Nav = () => {
                         </a>
                     </div>
                 </div>
-                <div className="flex gap-2">
+                <div className="flex gap-2 justify-center">
                     {/* TODO: Add Social Links here in place of auth ctas */}
                     <Button variant={'outline'}>Log in</Button>
                     <Button>Sign up</Button>
@@ -344,7 +344,7 @@ const Nav = () => {
                             <a
                             className={cn(
                                 buttonVariants({
-                                variant: 'ghost',
+                                    variant: 'ghost',
                                 }),
                                 'justify-start text-muted-foreground',
                             )}
@@ -355,7 +355,7 @@ const Nav = () => {
                             <a
                             className={cn(
                                 buttonVariants({
-                                variant: 'ghost',
+                                    variant: 'ghost',
                                 }),
                                 'justify-start text-muted-foreground',
                             )}
@@ -366,7 +366,7 @@ const Nav = () => {
                             <a
                             className={cn(
                                 buttonVariants({
-                                variant: 'ghost',
+                                    variant: 'ghost',
                                 }),
                                 'justify-start text-muted-foreground',
                             )}

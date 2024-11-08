@@ -4,9 +4,9 @@ interface Props {}
 
 const Page: NextPage<Props> = ({}) => {
     return (
-        <div>
+        <section className='py-10 px-16'>
             Events Page
-        </div>
+        </section>
     )
 }
 
