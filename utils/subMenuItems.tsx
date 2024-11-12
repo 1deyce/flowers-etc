@@ -28,14 +28,14 @@ export const subMenuItems: SubMenuItem[]  =  [
         description: 'Celebrate the arrival of new life with our joyful baby shower packages.',
         icon: <Gift className="size-5 shrink-0" />,
         href: '/events/baby-showers',
-        image: ''
+        image: '/images/baby-shower-item.jpg'
     },
     {
         title: 'Bridal Showers',
         description: 'Honor the bride-to-be with a memorable bridal shower experience.',
         icon: <Calendar className="size-5 shrink-0" />,
         href: '/events/bridal-showers',
-        image: ''
+        image: '/images/bridal-shower-item.jpg'
     },
     {
         title: 'Corporate Events',
