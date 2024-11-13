@@ -13,9 +13,7 @@ import { ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import BlurFade from '@/components/ui/blur-fade';
 
-interface Props {}
-
-const Page: NextPage<Props> = ({}) => {
+const Page: NextPage = ({}) => {
     return (
         <section className='py-10 px-0 sm:px-16'>
             <BlurFade delay={0.25} inView>
