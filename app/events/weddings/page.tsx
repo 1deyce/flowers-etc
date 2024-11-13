@@ -1,8 +1,6 @@
-import { NextPage } from 'next'
+import { NextPage } from 'next';
 
-interface Props {}
-
-const Page: NextPage<Props> = ({}) => {
+const Page: NextPage = ({}) => {
     return (
         <section className='py-10 px-16'>
             Weddings!

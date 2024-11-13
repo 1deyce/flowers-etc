@@ -2,13 +2,11 @@ import {
     BarChartHorizontal,
     BatteryCharging,
     CircleHelp,
-    ExternalLink,
     Layers,
     WandSparkles,
     ZoomIn,
 } from 'lucide-react';
-import { Badge } from '../ui/badge';
-import { Button, buttonVariants } from '../ui/button';
+import {  buttonVariants } from '../ui/button';
 import { cn } from '@/lib/utils';
 
 const reasons = [

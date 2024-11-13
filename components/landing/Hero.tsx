@@ -1,6 +1,6 @@
-import { Bell, Calendar1 } from 'lucide-react';
+import { Calendar1 } from 'lucide-react';
 import WordPullUp from "@/components/ui/word-pull-up";
-import { Button, buttonVariants } from '@/components/ui/button';
+import { buttonVariants } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
 import BlurFade from '../ui/blur-fade';

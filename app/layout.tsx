@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Catamaran } from "next/font/google";
-import localFont from "next/font/local";
 import "./globals.css";
 import Nav from "@/components/shared/Nav";
 import Footer from "@/components/shared/Footer";

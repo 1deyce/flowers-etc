@@ -5,7 +5,6 @@ import {
     Card,
     CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
@@ -24,8 +23,8 @@ const Page: NextPage<Props> = ({}) => {
             </BlurFade>
             <BlurFade delay={0.25 * 2} inView>
                 <p className="text-lg text-center my-8 w-1/2 mx-auto">
-                    Discover our wide range of events tailored to celebrate life's special moments. 
-                    Whether you're planning a wedding, a corporate gathering, or a festive celebration, 
+                    Discover our wide range of events tailored to celebrate life&apos;s special moments. 
+                    Whether you&apos;re planning a wedding, a corporate gathering, or a festive celebration, 
                     we have something for everyone.
                 </p>
             </BlurFade>

@@ -1,4 +1,4 @@
-import { Gem, Users, Gift, Calendar, Briefcase, Menu, Heart, Church, Wrench } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import { Button, buttonVariants } from '@/components/ui/button';
 import {
@@ -43,7 +43,7 @@ const Nav = () => {
                             <span className="text-2xl font-bold">Flowers Etc...</span>
                         </div>
                         <div className="flex items-center">
-                            <a
+                            <Link
                                 className={cn(
                                     'text-muted-foreground',
                                     navigationMenuTriggerStyle,
@@ -54,12 +54,12 @@ const Nav = () => {
                                 href="/"
                             >
                                 HOME
-                            </a>
+                            </Link>
                             <NavigationMenu>
                                 <NavigationMenuList>
                                 <NavigationMenuItem className="text-muted-foreground">
                                     <NavigationMenuTrigger>
-                                        <a 
+                                        <Link 
                                             href="/events"
                                             className={cn(
                                                 'text-muted-foreground',
@@ -70,7 +70,7 @@ const Nav = () => {
                                             )}
                                         >
                                             EVENTS
-                                        </a>
+                                        </Link>
                                     </NavigationMenuTrigger>
                                     <NavigationMenuContent>
                                     <ul className="w-80 p-3">
@@ -101,7 +101,7 @@ const Nav = () => {
                                 </NavigationMenuItem>
                                 </NavigationMenuList>
                             </NavigationMenu>
-                            <a
+                            <Link
                                 className={cn(
                                     'text-muted-foreground',
                                     navigationMenuTriggerStyle,
@@ -112,8 +112,8 @@ const Nav = () => {
                                 href="/gifting"
                             >
                                 GIFTING
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 className={cn(
                                     'text-muted-foreground',
                                     navigationMenuTriggerStyle,
@@ -124,17 +124,17 @@ const Nav = () => {
                                 href="/contact"
                             >
                                 CONTACT US
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="flex gap-2 justify-center">
                         {/* TODO: Add Social Links here */}
-                        <a href="#">
+                        <Link href="#">
                             <FaInstagram className="size-6" />
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link href="#">
                             <FaFacebook className="size-6" />
-                        </a>
+                        </Link>
                     </div>
                 </nav>
                 <div className="block lg:hidden">
@@ -167,17 +167,17 @@ const Nav = () => {
                             </SheetTitle>
                             </SheetHeader>
                             <div className="my-8 flex flex-col gap-4">
-                                <a href="/" className="font-semibold">
+                                <Link href="/" className="font-semibold">
                                     HOME
-                                </a>
+                                </Link>
                                 <Accordion type="single" collapsible className="w-full">
                                     <AccordionItem value="products" className="border-b-0">
                                     <AccordionTrigger className="py-0 font-semibold hover:no-underline">
-                                        <a href="/events" className='font-semibold'>EVENTS</a>
+                                        <Link href="/events" className='font-semibold'>EVENTS</Link>
                                     </AccordionTrigger>
                                     <AccordionContent className="mt-2">
                                         {subMenuItems.map((item, idx) => (
-                                            <a
+                                            <Link
                                                 key={idx}
                                                 className={cn(
                                                     'flex select-none gap-4 rounded-md p-3 leading-none outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
@@ -193,27 +193,27 @@ const Nav = () => {
                                                         {item.description}
                                                     </p>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         ))}
                                     </AccordionContent>
                                     </AccordionItem>
                                 </Accordion>
-                                <a href="/gifting" className="font-semibold">
+                                <Link href="/gifting" className="font-semibold">
                                     GIFTING
-                                </a>
-                                <a href="/contact" className="font-semibold">
+                                </Link>
+                                <Link href="/contact" className="font-semibold">
                                     CONTACT US
-                                </a>
+                                </Link>
                             </div>
                             <div className="border-t pt-4">
                                 <div className="mt-2 flex justify-center flex-row gap-3">
                                     {/* TODO: Add Social Links here */}
-                                    <a href="#">
+                                    <Link href="#">
                                         <FaInstagram className="size-6" />
-                                    </a>
-                                    <a href="#">
+                                    </Link>
+                                    <Link href="#">
                                         <FaFacebook className="size-6" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </SheetContent>

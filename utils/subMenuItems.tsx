@@ -1,4 +1,4 @@
-import { Gem, Users, Gift, Calendar, Briefcase, Menu, Heart, Church, Wrench } from 'lucide-react';
+import { Gem, Users, Gift, Calendar, Briefcase, Heart, Church, Wrench } from 'lucide-react';
 
 interface SubMenuItem  {
     title: string;
