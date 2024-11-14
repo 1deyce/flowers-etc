@@ -4,7 +4,7 @@ import {
 } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '../../public/images/flowers logo.jpg';
+import Logo from '../../public/images/flowers-logo.jpg';
 
 
 const Footer = () => {

@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import {  buttonVariants } from '../ui/button';
 import { cn } from '@/lib/utils';
+import BlurFade from '../ui/blur-fade';
 
 const reasons = [
     {
@@ -50,21 +51,25 @@ const reasons = [
 
 const About = () => {
     return (
-        <section className="py-32 px-16">
+        <section className="py-32 px-4 md:px-16">
             <div className="mb-10 md:mb-20">
-                <h2 className="mb-2 text-center text-3xl font-semibold lg:text-5xl">
-                    Why Us?
-                </h2>
+                <BlurFade delay={0.25} inView>
+                    <h2 className="mb-2 text-center text-3xl font-semibold lg:text-5xl">
+                        Why Us?
+                    </h2>
+                </BlurFade>
             </div>
             <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
                 {reasons.map((reason, i) => (
-                    <div key={i} className="flex flex-col">
-                        <div className="mb-5 flex size-16 items-center justify-center rounded-full bg-accent">
-                            {reason.icon}
+                    <BlurFade key={i} delay={0.25 * (i + 3)} inView>
+                        <div className="flex flex-col">
+                            <div className="mb-5 flex size-16 items-center justify-center rounded-full bg-accent">
+                                {reason.icon}
+                            </div>
+                            <h3 className="mb-2 text-xl font-semibold">{reason.title}</h3>
+                            <p className="text-muted-foreground">{reason.description}</p>
                         </div>
-                        <h3 className="mb-2 text-xl font-semibold">{reason.title}</h3>
-                        <p className="text-muted-foreground">{reason.description}</p>
-                    </div>
+                    </BlurFade>
                 ))}
             </div>
             <div className="mx-auto flex max-w-5xl flex-col items-center pt-16">

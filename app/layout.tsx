@@ -8,6 +8,7 @@ import { Toaster } from "@/components/ui/sonner";
 export const metadata: Metadata = {
     title: "Flowers Etc.",
     description: "Florist Website",
+    icons: "/images/flowers-logo.jpg"
 };
 
 const catamaran = Catamaran({

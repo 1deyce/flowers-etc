@@ -24,7 +24,7 @@ import {
     SheetTrigger,
 } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
-import Logo from '../../public/images/flowers logo.jpg';
+import Logo from '../../public/images/flowers-logo.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 import { subMenuItems } from '@/utils/subMenuItems';
@@ -129,10 +129,10 @@ const Nav = () => {
                     </div>
                     <div className="flex gap-2 justify-center">
                         {/* TODO: Add Social Links here */}
-                        <Link href="#">
+                        <Link target='_blank' href="https://www.instagram.com/_flowersetc">
                             <FaInstagram className="size-6" />
                         </Link>
-                        <Link href="#">
+                        <Link target='_blank' href="#">
                             <FaFacebook className="size-6" />
                         </Link>
                     </div>
