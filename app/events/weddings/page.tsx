@@ -19,7 +19,7 @@ const Page: NextPage = ({}) => {
                     <li>Arches from <span className='font-bold'>R 500</span></li>
                 </ul>
                 <p className="mb-2">Prices vary according to type of arrangements and flowers used.</p>
-                <p>Contact me with your Wedding ideas and I'll gladly provide you with a quotation.</p>
+                <p>Contact me with your Wedding ideas and I&apos;ll gladly provide you with a quotation.</p>
             </div> 
             <div className='flex justify-center mx-auto sm:w-1/2'>
                 <CarouselOrientation />
