@@ -20,15 +20,15 @@ const Page: NextPage = ({}) => {
                 <h1 className="mb-2 text-center text-3xl font-semibold lg:text-5xl">Our Events</h1>
             </BlurFade>
             <BlurFade delay={0.25 * 2} inView>
-                <p className="text-lg text-center my-8 w-1/2 mx-auto">
+                <p className="text-lg text-center my-8 w-3/5 sm:w-2/3 mx-auto">
                     Discover our wide range of events tailored to celebrate life&apos;s special moments. 
                     Whether you&apos;re planning a wedding, a corporate gathering, or a festive celebration, 
                     we have something for everyone.
                 </p>
             </BlurFade>
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 justify-center items-center px-16'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 px-16'>
                 {subMenuItems.map((item, idx) => (
-                    <BlurFade key={idx} delay={0.25 * (idx + 3)} inView>
+                    <BlurFade key={idx} delay={0.25 * (idx + 1)} inView>
                         <Card>
                             <CardHeader>
                                 <CardTitle>{item.title}</CardTitle>

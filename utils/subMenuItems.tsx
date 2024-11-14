@@ -35,34 +35,34 @@ export const subMenuItems: SubMenuItem[]  =  [
         description: 'Honor the bride-to-be with a memorable bridal shower experience.',
         icon: <Calendar className="size-5 shrink-0" />,
         href: '/events/bridal-showers',
-        image: '/images/bridal-shower-item.jpg'
+        image: '/images/bridal.jpg'
     },
     {
         title: 'Corporate Events',
         description: 'Host professional gatherings with our tailored corporate event solutions.',
         icon: <Briefcase className="size-5 shrink-0" />,
         href: '/events/corporate-events',
-        image: ''
+        image: '/images/corporate-item.jpg'
     },
     {
         title: 'Workshops',
         description: 'Engage and enlighten through hands-on workshops and learning experiences.',
         icon: <Wrench className="size-5 shrink-0" />,
         href: '/events/workshops',
-        image: ''
+        image: '/images/workshop-item.jpg'
     },
     {
         title: 'Funerals/Memorial Services',
         description: 'Honor and remember loved ones with our respectful memorial services.',
         icon: <Heart className="size-5 shrink-0" />,
         href: '/events/funerals',
-        image: ''
+        image: '/images/funeral-item.jpg'
     },
     {
         title: 'Church Arrangements',
         description: 'Coordinate spiritual events with our specialized church arrangements.',
         icon: <Church className="size-5 shrink-0" />,
         href: '/events/church-arrangements',
-        image: ''
+        image: '/images/church-item.jpg'
     },
 ];

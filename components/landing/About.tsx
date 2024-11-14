@@ -61,7 +61,7 @@ const About = () => {
             </div>
             <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
                 {reasons.map((reason, i) => (
-                    <BlurFade key={i} delay={0.25 * (i + 3)} inView>
+                    <BlurFade key={i} delay={0.25 * (i + 1)} inView>
                         <div className="flex flex-col">
                             <div className="mb-5 flex size-16 items-center justify-center rounded-full bg-accent">
                                 {reason.icon}
