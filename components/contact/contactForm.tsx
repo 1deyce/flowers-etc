@@ -31,7 +31,7 @@ const ContactForm = () => {
                 },
                 body: JSON.stringify(formData),
             });
-
+            // TODO: Add Sonner Notification & Loader on submit btn 
             if (response.ok) {
                 const data = await response.json();
                 console.log('Success:', data);
@@ -63,6 +63,7 @@ const ContactForm = () => {
                         placeholder="First Name"
                         value={formData.firstName}
                         onChange={handleChange}
+                        required
                     />
                 </div>
                 <div className="grid w-full items-center gap-1.5">
@@ -74,6 +75,7 @@ const ContactForm = () => {
                         placeholder="Last Name"
                         value={formData.lastName}
                         onChange={handleChange}
+                        required
                     />
                 </div>
             </div>
@@ -86,6 +88,7 @@ const ContactForm = () => {
                     placeholder="Email"
                     value={formData.email}
                     onChange={handleChange}
+                    required
                 />
             </div>
             <div className="grid w-full items-center gap-1.5">
@@ -97,6 +100,7 @@ const ContactForm = () => {
                     placeholder="Subject"
                     value={formData.subject}
                     onChange={handleChange}
+                    required
                 />
             </div>
             <div className="grid w-full gap-1.5">
@@ -107,6 +111,7 @@ const ContactForm = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
+                    required
                 />
             </div>
             <Button type="submit" className="w-full">Send Message</Button>
