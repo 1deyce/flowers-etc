@@ -5,8 +5,11 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
+import { Loader2 } from 'lucide-react';
+import { toast } from 'sonner';
 
 const ContactForm = () => {
+    const [isLoading, setIsLoading] = useState(false);
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -22,7 +25,7 @@ const ContactForm = () => {
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        
+        setIsLoading(true);
         try {
             const response = await fetch('/api/send-email', {
                 method: 'POST',
@@ -31,10 +34,9 @@ const ContactForm = () => {
                 },
                 body: JSON.stringify(formData),
             });
-            // TODO: Add Sonner Notification & Loader on submit btn 
             if (response.ok) {
                 const data = await response.json();
-                console.log('Success:', data);
+                console.log('Success:', data.message);
                 setFormData({
                     firstName: '',
                     lastName: '',
@@ -42,12 +44,16 @@ const ContactForm = () => {
                     subject: '',
                     message: '',
                 });
+                toast("Message sent successfully!")
             } else {
                 const errorData = await response.json();
-                console.error('Error:', errorData.error);
+                throw new Error(errorData.error || 'Something went wrong');
             }
         } catch (error) {
             console.error('Network error:', error);
+            toast("Failed to send message!");
+        } finally {
+            setIsLoading(false);   
         }
     };
 
@@ -114,7 +120,16 @@ const ContactForm = () => {
                     required
                 />
             </div>
-            <Button type="submit" className="w-full">Send Message</Button>
+            <Button 
+                type="submit" 
+                className="w-full"
+            >
+                {isLoading? (
+                    <Loader2 className="h-4 w-4 animate-spin" />
+                ) : (
+                    'Send Message'
+                )}
+            </Button>
         </form>
     );
 };
