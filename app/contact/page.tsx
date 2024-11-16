@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <section className="py-16 px-10 sm:py-40">
             <div className="mx-auto flex max-w-screen-xl flex-col justify-between gap-10 lg:flex-row lg:gap-20">
-                <div className="mx-auto flex max-w-sm flex-col justify-between gap-10">
+                <div className="mx-auto flex max-w-md flex-col justify-center gap-10">
                     <div className="text-center lg:text-left">
                         <BlurFade delay={0.25} inView>  
                             <h1 className="mb-2 text-5xl font-semibold lg:mb-1 lg:text-6xl">

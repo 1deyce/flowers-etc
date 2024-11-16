@@ -58,7 +58,7 @@ const ContactForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="mx-auto flex max-w-screen-md flex-col gap-6 rounded-lg border mt-6 sm:mt-0">
+        <form onSubmit={handleSubmit} className="mx-auto flex max-w-screen-md flex-col gap-6 rounded-lg mt-6 sm:mt-0">
             <div className="flex gap-4">
                 <div className="grid w-full items-center gap-1.5">
                     <Label htmlFor="firstname">First Name</Label>
@@ -125,7 +125,7 @@ const ContactForm = () => {
                 className="w-full"
             >
                 {isLoading? (
-                    <Loader2 className="h-4 w-4 animate-spin" />
+                    <Loader2 className="h-6 w-6 animate-spin" />
                 ) : (
                     'Send Message'
                 )}
