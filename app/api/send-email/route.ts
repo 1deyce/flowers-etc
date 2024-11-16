@@ -31,7 +31,7 @@ export async function POST(request: Request) {
             html: htmlContent,
         };
 
-        transporter.sendMail(mailOptions, (error, info) => {
+        await transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
                 return console.log('Error occurred: ' + error.message);
             }
