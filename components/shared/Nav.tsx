@@ -73,30 +73,28 @@ const Nav = () => {
                                         </Link>
                                     </NavigationMenuTrigger>
                                     <NavigationMenuContent>
-                                    <ul className="w-80 p-3">
-                                        <NavigationMenuLink>
-                                            {subMenuItems.map((item, idx) => (
-                                                <li key={idx}>
-                                                    <Link
-                                                        className={cn(
-                                                            'flex select-none gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
-                                                        )}
-                                                        href={item.href}
-                                                    >
-                                                        {item.icon}
-                                                        <div>
-                                                            <div className="text-sm font-semibold">
-                                                                {item.title}
+                                        <ul className="w-80 p-3">
+                                                {subMenuItems.map((item, idx) => (
+                                                    <li key={idx}>
+                                                        <Link
+                                                            className={cn(
+                                                                'flex select-none gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
+                                                            )}
+                                                            href={item.href}
+                                                        >
+                                                            {item.icon}
+                                                            <div>
+                                                                <div className="text-sm font-semibold">
+                                                                    {item.title}
+                                                                </div>
+                                                                <p className="text-sm leading-snug text-muted-foreground">
+                                                                    {item.description}
+                                                                </p>
                                                             </div>
-                                                            <p className="text-sm leading-snug text-muted-foreground">
-                                                                {item.description}
-                                                            </p>
-                                                        </div>
-                                                    </Link>
-                                                </li>
-                                            ))}
-                                        </NavigationMenuLink>
-                                    </ul>
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                        </ul>
                                     </NavigationMenuContent>
                                 </NavigationMenuItem>
                                 </NavigationMenuList>

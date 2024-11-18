@@ -6,8 +6,8 @@ import Footer from "@/components/shared/Footer";
 import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
-    title: "Flowers Etc.",
-    description: "Florist Website",
+    title: "Flowers Etc...",
+    description: "The home of Flowers Etc...",
     icons: "/images/flowers-logo.jpg"
 };
 

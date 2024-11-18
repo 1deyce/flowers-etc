@@ -11,7 +11,7 @@ const Page = ({}) => {
                     <p className='text-lg text-center my-8 sm:w-1/2 mx-auto'>Allow me the opportunity to turn your special moments into breathtaking memories.</p>
                 </BlurFade>
                 <BlurFade delay={0.10 * 2} inView>
-                    <ul className='text-center px-10 mb-10'>
+                    <ul className='text-center px-6 mb-10'>
                         {weddingItems.map((item, idx) => (
                             <li key={idx}>{item.description} from <span className='font-bold'>R {item.price}</span></li>
                         ))}
