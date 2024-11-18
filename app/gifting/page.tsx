@@ -8,7 +8,7 @@ const Page = ({}) => {
             <div className='flex flex-col justify-center items-center'>
                 <h1 className='mb-2 text-center text-3xl font-semibold lg:text-5xl'>Personalised & Corporate Gifting</h1>
                 <BlurFade delay={0.10} inView>
-                    <p className='text-lg text-center my-8 sm:w-1/3 mx-auto'>Whether you're celebrating a milestone or expressing appreciation in a corporate setting, we specialize in creating personalized gifts that leave a lasting impression. Let us help you craft memorable moments that resonate with your loved ones or colleagues.</p>
+                    <p className='text-lg text-center my-8 sm:w-1/3 mx-auto'>Whether you&apos;re celebrating a milestone or expressing appreciation in a corporate setting, we specialize in creating personalized gifts that leave a lasting impression. Let us help you craft memorable moments that resonate with your loved ones or colleagues.</p>
                 </BlurFade>
                 <BlurFade delay={0.10 * 2} inView>
                     <ul className='text-center px-6 mb-10'>
