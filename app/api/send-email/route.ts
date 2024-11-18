@@ -1,18 +1,10 @@
-import nodemailer from 'nodemailer';
+import sendgrid from '@sendgrid/mail';
 
-const appPassword = process.env.APP_PASSWORD;
+sendgrid.setApiKey(process.env.SENDGRID_API_KEY!);
 
 export async function POST(request: Request) { 
     try {
         const { firstName, lastName, email, subject, message} = await request.json();
-
-        const transporter = nodemailer.createTransport({
-            service: 'gmail',
-            auth: {
-                user: 'keenandeyce@gmail.com', 
-                pass: appPassword, 
-            },
-        });
 
         const htmlContent = `
             <div>
@@ -24,21 +16,22 @@ export async function POST(request: Request) {
             </div>
         `;
 
-        const mailOptions = {
+        const msg = {
             from: 'keenandeyce@gmail.com',
             to: 'keenandeyce@gmail.com',
             subject: 'Message from Flowers Etc...',
             html: htmlContent,
         };
 
-        await transporter.sendMail(mailOptions, (error, info) => {
-            if (error) {
-                return console.log('Error occurred: ' + error.message);
-            }
-            console.log('Message sent: %s', info.messageId);
-        });
+        sendgrid.send(msg)
+            .then(() => {
+                console.log('Email sent')
+            })
+            .catch((error) => {
+                console.error(error)
+            })
 
-        return new Response(
+        return  new Response(
             JSON.stringify({ message: 'Email sent successfully' }),
             { status: 200 }
         );

@@ -6,9 +6,9 @@ import {
     WandSparkles,
     ZoomIn,
 } from 'lucide-react';
-import {  buttonVariants } from '../ui/button';
-import { cn } from '@/lib/utils';
+import { trustedClients } from '@/utils/trustedClients';
 import BlurFade from '../ui/blur-fade';
+import Image from 'next/image';
 
 const reasons = [
     {
@@ -77,60 +77,22 @@ const About = () => {
                     <h2 className="mb-2 text-center text-3xl font-semibold lg:text-5xl">
                         Our Trusted Clients
                     </h2>
-                    <div className="flex flex-wrap items-center justify-center gap-4">
-                        <a
-                            href="#"
-                            className={cn(
-                                buttonVariants({ variant: 'outline' }),
-                                'group px-3',
-                            )}
-                        >
-                            <img
-                                src="https://www.shadcnblocks.com/images/block/logos/shadcn-ui-small.svg"
-                                alt="company logo"
-                                className="h-6 saturate-0 transition-all group-hover:saturate-100"
-                            />
-                        </a>
-                        <a
-                            href="#"
-                            className={cn(
-                                buttonVariants({ variant: 'outline' }),
-                                'group px-3',
-                            )}
-                        >
-                            <img
-                                src="https://www.shadcnblocks.com/images/block/logos/typescript-small.svg"
-                                alt="company logo"
-                                className="h-6 saturate-0 transition-all group-hover:saturate-100"
-                            />
-                        </a>
-
-                        <a
-                            href="#"
-                            className={cn(
-                                buttonVariants({ variant: 'outline' }),
-                                'group px-3',
-                            )}
-                        >
-                            <img
-                                src="https://www.shadcnblocks.com/images/block/logos/react-icon.svg"
-                                alt="company logo"
-                                className="h-6 saturate-0 transition-all group-hover:saturate-100"
-                            />
-                        </a>
-                        <a
-                            href="#"
-                            className={cn(
-                                buttonVariants({ variant: 'outline' }),
-                                'group px-3',
-                            )}
-                        >
-                            <img
-                                src="https://www.shadcnblocks.com/images/block/logos/tailwind-small.svg"
-                                alt="company logo"
-                                className="h-4 saturate-0 transition-all group-hover:saturate-100"
-                            />
-                        </a>
+                    <div className="flex flex-wrap justify-center items-center mt-10 gap-16">
+                        {trustedClients.map((client, idx) => (
+                            <div
+                                className='flex flex-col justify-center'
+                                key={idx}
+                            >
+                                <Image 
+                                    src={client.image}
+                                    alt={client.title}
+                                    width={100}
+                                    height={100}
+                                    className='rounded-3xl mx-auto'
+                                />
+                                <p className='flex flex-wrap mx-auto text-center pt-4 font-bold uppercase'>{client.title}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
