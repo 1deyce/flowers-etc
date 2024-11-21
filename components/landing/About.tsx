@@ -80,7 +80,7 @@ const About = () => {
                     <div className="flex flex-wrap justify-center items-center mt-10 gap-16">
                         {trustedClients.map((client, idx) => (
                             <div
-                                className='flex flex-col justify-center'
+                                className='flex flex-col w-[150px] justify-center'
                                 key={idx}
                             >
                                 <Image 

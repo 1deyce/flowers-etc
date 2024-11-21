@@ -32,7 +32,7 @@ export const subMenuItems: SubMenuItem[]  =  [
     },
     {
         title: 'Bridal Showers',
-        description: 'Honor the bride-to-be with a memorable bridal shower experience.',
+        description: 'Honor the bride-to-be with a memorable & fitting bridal shower experience.',
         icon: <Calendar className="size-5 shrink-0" />,
         href: '/events/bridal-showers',
         image: '/images/bridal.jpg'

@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="z-50">
                 <BlurFade delay={0.25} inView>
                     <h1 
-                        className='text-4xl text-center sm:text-left mb-6 font-bold tracking-[-0.02em] md:text-[7vw] lg:text-8xl text-black md:text-7xl leading-none'
+                        className='text-5xl text-center sm:text-left mb-6 font-bold tracking-[-0.02em] md:text-[7vw] lg:text-8xl text-black md:text-7xl leading-none'
                     >
                         Your Trusted Source for Stunning Floral Arrangements
                     </h1>

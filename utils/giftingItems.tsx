@@ -6,7 +6,7 @@ interface GiftingItem {
 export const giftingItems: GiftingItem[] = [
     {
         description: "Flower Arrangements",
-        price: "250"
+        price: "100"
     },
     {
         description: "Newborn Baby Gifts",
