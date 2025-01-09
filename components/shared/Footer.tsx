@@ -22,11 +22,11 @@ const Footer = () => {
 					<p className='text-center pb-2 sm:pb-0'> © {new Date().getFullYear()} - All rights reserved</p>
 				</div>
 				<nav className="flex flex-row gap-2 md:place-self-center md:justify-self-end">
-					<Link href="">
-						<FaInstagram className='size-7' />
+					<Link href="https://www.instagram.com/_flowersetc" target='_blank'>
+						<FaInstagram className='size-6 hover:scale-110 duration-500' />
 					</Link>
-					<Link href="">
-						<FaFacebook className='size-7' />
+					<Link href="https://www.facebook.com/flowersetc01/" target='_blank'>
+						<FaFacebook className='size-6 hover:scale-110 duration-500' />
 					</Link>
 				</nav>
 			</footer>

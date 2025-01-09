@@ -126,12 +126,11 @@ const Nav = () => {
                         </div>
                     </div>
                     <div className="flex gap-2 justify-center">
-                        {/* TODO: Add Social Links here */}
                         <Link target='_blank' href="https://www.instagram.com/_flowersetc">
-                            <FaInstagram className="size-6" />
+                            <FaInstagram className="size-6 hover:scale-110 duration-500" />
                         </Link>
-                        <Link target='_blank' href="#">
-                            <FaFacebook className="size-6" />
+                        <Link target='_blank' href="https://www.facebook.com/flowersetc01/">
+                            <FaFacebook className="size-6 hover:scale-110 duration-500" />
                         </Link>
                     </div>
                 </nav>
