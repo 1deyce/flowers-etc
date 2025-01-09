@@ -2,6 +2,24 @@ import CarouselOrientation from '@/components/ui/carousel-orientation';
 import { giftingItems } from '@/utils/giftingItems';
 import BlurFade from '@/components/ui/blur-fade';
 
+const giftImages = [
+    '/gifting/arrangements.JPG',
+    '/gifting/greenYellowArrangement.jpg',
+    '/gifting/posey_3.jpg',
+    '/gifting/purple_white_pink.jpg',
+    '/gifting/square_box_posey.jpg',
+    '/gifting/white_flower_posy.jpg',
+    '/gifting/arrangements.JPG',
+    '/gifting/IMG_2557.jpg',
+    '/gifting/IMG_8230.JPG',
+    '/gifting/IMG_8233.JPG',
+    '/gifting/new_baby_1.JPG',
+    '/gifting/new_baby_2.JPG',
+    '/gifting/pamper_hamper_1.JPG',
+    '/gifting/pamper_hamper_2.JPG', 
+    '/gifting/pamper_hamper_3.JPG',
+]
+
 const Page = ({}) => {
     return (
         <section className='py-10 px-6 sm:px-16'>
@@ -23,7 +41,7 @@ const Page = ({}) => {
                 </div>
             </div> 
             <div className='flex justify-center mx-auto mt-20 sm:w-1/2'>
-                <CarouselOrientation />
+                <CarouselOrientation images={giftImages} />
             </div>
         </section>
     )

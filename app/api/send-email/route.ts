@@ -16,6 +16,7 @@ export async function POST(request: Request) {
             </div>
         `;
 
+        // Update to flowersEtc
         const msg = {
             from: 'keenandeyce@gmail.com',
             to: 'keenandeyce@gmail.com',

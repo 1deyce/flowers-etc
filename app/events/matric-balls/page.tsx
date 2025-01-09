@@ -23,7 +23,7 @@ const Page = ({}) => {
                 </div>
             </div> 
             <div className='flex justify-center mx-auto mt-20 sm:w-1/2'>
-                <CarouselOrientation />
+                {/* <CarouselOrientation images={mbImages} /> */}
             </div>
         </section>
     )
