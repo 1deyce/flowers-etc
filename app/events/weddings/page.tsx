@@ -19,6 +19,16 @@ const weddingImages = [
     '/weddings/IMG_9773.JPG', 
     '/weddings/IMG_9775.JPG',
     '/weddings/3a92a8c8-e4fc-44a8-95ab-3a89d4e8c938.JPG',
+    '/weddings/image00010.jpeg', 
+    '/weddings/image00001.jpeg', 
+    '/weddings/image00002.jpeg', 
+    '/weddings/image00003.jpeg', 
+    '/weddings/image00004.jpeg', 
+    '/weddings/image00005.jpeg', 
+    '/weddings/image00006.jpeg', 
+    '/weddings/image00007.jpeg', 
+    '/weddings/image00008.jpeg', 
+    '/weddings/image00009.jpeg'
 ]
 
 const Page = ({}) => {

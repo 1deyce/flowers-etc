@@ -29,7 +29,7 @@ const CarouselOrientation: React.FC<CarouselProps> = ({ images }) => {
 								alt={`Slide ${index + 1}`}
 								className="object-cover w-auto h-full rounded-xl"
 								objectFit="center"
-								width={400}
+								width={2000}
 								height={200}
 							/>
 						</div>
