@@ -16,7 +16,7 @@ export async function POST(request: Request) {
             </div>
         `;
 
-        // Update to flowersEtc
+        // Update to flowersEtc details
         const msg = {
             from: 'keenandeyce@gmail.com',
             to: 'keenandeyce@gmail.com',
@@ -32,7 +32,7 @@ export async function POST(request: Request) {
                 console.error(error)
             })
 
-        return  new Response(
+        return new Response(
             JSON.stringify({ message: 'Email sent successfully' }),
             { status: 200 }
         );

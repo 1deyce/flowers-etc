@@ -1,10 +1,10 @@
-import CarouselOrientation from '@/components/ui/carousel-orientation';
 import { giftingItems } from '@/utils/giftingItems';
 import BlurFade from '@/components/ui/blur-fade';
+import Gallery from '@/components/ui/gallery';
 
 const giftImages = [
-    '/gifting/arrangements.JPG',
     '/gifting/greenYellowArrangement.jpg',
+    '/gifting/arrangements.JPG',
     '/gifting/posey_3.jpg',
     '/gifting/purple_white_pink.jpg',
     '/gifting/square_box_posey.jpg',
@@ -41,7 +41,7 @@ const Page = ({}) => {
                 </div>
             </div> 
             <div className='flex justify-center mx-auto mt-20 sm:w-1/2'>
-                <CarouselOrientation images={giftImages} />
+                <Gallery images={giftImages} />
             </div>
         </section>
     )

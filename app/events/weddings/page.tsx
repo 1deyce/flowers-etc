@@ -1,6 +1,6 @@
-import CarouselOrientation from '@/components/ui/carousel-orientation';
 import { weddingItems } from '@/utils/weddingItems';
 import BlurFade from '@/components/ui/blur-fade';
+import Gallery from '@/components/ui/gallery';
 
 const weddingImages = [
     '/weddings/IMG_9772.JPG',
@@ -52,7 +52,7 @@ const Page = ({}) => {
                 </div>
             </div> 
             <div className='flex justify-center mx-auto mt-20 sm:w-1/2'>
-                <CarouselOrientation images={weddingImages} />
+                <Gallery images={weddingImages} />
             </div>
         </section>
     )
