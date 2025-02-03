@@ -60,7 +60,7 @@ const About = () => {
                 </BlurFade>
             </div>
             <div className="flex justify-center text-center lg:mx-60">
-                <p>I'm Hayley. Owner of a self-run, woman-owned small business called <span className='italic font-bold'>Flowers etc...</span> <br />My business provides a personal service to my clients. From flowers for weddings and functions, to a personalized and corporate gifting service. <br />I also offer a workshop service for those interested in team building or just taking time out. <br /><br /><span className='text-lg'>Can't wait to be of excellent service to you!</span></p>
+                <p>I&apos;m Hayley. Owner of a self-run, woman-owned small business called <span className='italic font-bold'>Flowers etc...</span> <br />My business provides a personal service to my clients. From flowers for weddings and functions, to a personalized and corporate gifting service. <br />I also offer a workshop service for those interested in team building or just taking time out. <br /><br /><span className='text-lg'>Can&apos;t wait to be of excellent service to you!</span></p>
             </div>
             <div className="mx-auto flex max-w-5xl flex-col items-center pt-16">
                 <div className="mt-32 flex flex-col items-center gap-4">
