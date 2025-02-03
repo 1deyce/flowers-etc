@@ -48,7 +48,7 @@ const Hero = () => {
                             href="/events"
                         >
                             <Calendar1 className="size-4" />
-                            <p className='mt-1'>Events</p>
+                            <p className='mt-1'>View our Events</p>
                         </Link>
                     </BlurFade>
                 </div>

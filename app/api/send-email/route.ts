@@ -16,7 +16,7 @@ export async function POST(request: Request) {
             </div>
         `;
 
-        // Update to flowersEtc details
+        // TODO: Update to flowersEtc details
         const msg = {
             from: 'keenandeyce@gmail.com',
             to: 'keenandeyce@gmail.com',

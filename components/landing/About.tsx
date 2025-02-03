@@ -51,26 +51,16 @@ const reasons = [
 
 const About = () => {
     return (
-        <section className="py-32 px-4 md:px-16">
+        <section className="flex flex-col py-32 px-4 md:px-16">
             <div className="mb-10 md:mb-20">
                 <BlurFade delay={0.25} inView>
                     <h2 className="mb-2 text-center text-3xl font-semibold lg:text-5xl">
-                        Why Us?
+                        About My Business
                     </h2>
                 </BlurFade>
             </div>
-            <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-                {reasons.map((reason, i) => (
-                    <BlurFade key={i} delay={0.25 * (i + 1)} inView>
-                        <div className="flex flex-col">
-                            <div className="mb-5 flex size-16 items-center justify-center rounded-full bg-accent">
-                                {reason.icon}
-                            </div>
-                            <h3 className="mb-2 text-xl font-semibold">{reason.title}</h3>
-                            <p className="text-muted-foreground">{reason.description}</p>
-                        </div>
-                    </BlurFade>
-                ))}
+            <div className="flex justify-center text-center lg:mx-60">
+                <p>I'm Hayley. Owner of a self-run, woman-owned small business called <span className='italic font-bold'>Flowers etc...</span> <br />My business provides a personal service to my clients. From flowers for weddings and functions, to a personalized and corporate gifting service. <br />I also offer a workshop service for those interested in team building or just taking time out. <br /><br /><span className='text-lg'>Can't wait to be of excellent service to you!</span></p>
             </div>
             <div className="mx-auto flex max-w-5xl flex-col items-center pt-16">
                 <div className="mt-32 flex flex-col items-center gap-4">
