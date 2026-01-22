@@ -1,6 +1,6 @@
 import { weddingItems } from '@/utils/weddingItems';
 import BlurFade from '@/components/ui/blur-fade';
-import Gallery from '@/components/ui/gallery';
+import GalleryModal from '@/components/ui/gallery-modal';
 
 const weddingImages = [
     '/weddings/IMG_9772.JPG',
@@ -15,7 +15,6 @@ const weddingImages = [
     '/weddings/df6c87a1-b57c-4ec5-85d6-c26933b2aaaa.JPG', 
     '/weddings/e43e8a57-4471-4935-b8de-e019f59ba8e7.JPG', 
     '/weddings/e39941a6-81cb-4bea-bf27-559b12597861.JPG', 
-    '/weddings/IMG_9772.JPG',
     '/weddings/IMG_9773.JPG', 
     '/weddings/IMG_9775.JPG',
     '/weddings/3a92a8c8-e4fc-44a8-95ab-3a89d4e8c938.JPG',
@@ -42,7 +41,7 @@ const Page = ({}) => {
                 <BlurFade delay={0.10 * 2} inView>
                     <ul className='text-center px-6 mb-10'>
                         {weddingItems.map((item, idx) => (
-                            <li key={idx}>{item.description} from <span className='font-bold'>R {item.price}</span></li>
+                            <li key={idx}>{item.description}</li>
                         ))}
                     </ul>
                 </BlurFade>
@@ -52,7 +51,7 @@ const Page = ({}) => {
                 </div>
             </div> 
             <div className='flex justify-center mx-auto mt-20 sm:w-1/2'>
-                <Gallery images={weddingImages} />
+                <GalleryModal images={weddingImages} />
             </div>
         </section>
     )

@@ -1,31 +1,24 @@
 interface GiftingItem {
-    description: string,
-    price: string
+    description: string
 }
 
 export const giftingItems: GiftingItem[] = [
     {
-        description: "Flower Arrangements",
-        price: "100"
+        description: "Flower Arrangements"
     },
     {
-        description: "Newborn Baby Gifts",
-        price: "250"
+        description: "Newborn Baby Gifts"
     },
     {
-        description: "Pamper Hampers",
-        price: "250"
+        description: "Pamper Hampers"
     },
     {
-        description: "Snack Hampers",
-        price: "250"
+        description: "Snack Hampers"
     },
     {
-        description: "Personalised Gifts",
-        price: "250"
+        description: "Personalised Gifts"
     },
     {
-        description: "Hampers",
-        price: "250"
+        description: "Hampers"
     },
 ]

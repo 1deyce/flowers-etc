@@ -1,6 +1,6 @@
 import { giftingItems } from '@/utils/giftingItems';
 import BlurFade from '@/components/ui/blur-fade';
-import Gallery from '@/components/ui/gallery';
+import GalleryModal from '@/components/ui/gallery-modal';
 
 const giftImages = [
     '/gifting/greenYellowArrangement.jpg',
@@ -26,12 +26,12 @@ const Page = ({}) => {
             <div className='flex flex-col justify-center items-center'>
                 <h1 className='mb-2 text-center text-3xl font-semibold lg:text-5xl'>Personalised & Corporate Gifting</h1>
                 <BlurFade delay={0.10} inView>
-                    <p className='text-lg text-center my-8 sm:w-1/3 mx-auto'>Whether you&apos;re celebrating a milestone or expressing appreciation in a corporate setting, we specialize in creating personalized gifts that leave a lasting impression. Let us help you craft memorable moments that resonate with your loved ones or colleagues.</p>
+                    <p className='text-lg text-center my-8 sm:w-1/3 mx-auto'>Whether you&apos;re celebrating a milestone or expressing appreciation in a corporate setting, we specialise in creating personalised gifts that leave a lasting impression. Let us help you craft memorable moments that resonate with your loved ones or colleagues.</p>
                 </BlurFade>
                 <BlurFade delay={0.10 * 2} inView>
                     <ul className='text-center px-6 mb-10'>
                         {giftingItems.map((item, idx) => (
-                            <li key={idx}>{item.description} from <span className='font-bold'>R {item.price}</span></li>
+                            <li key={idx}>{item.description}</li>
                         ))}
                     </ul>
                 </BlurFade>
@@ -40,8 +40,8 @@ const Page = ({}) => {
                     <p>Contact me with your Gifting ideas and I&apos;ll gladly provide you with a quotation.</p>
                 </div>
             </div> 
-            <div className='flex justify-center mx-auto mt-20 sm:w-1/2'>
-                <Gallery images={giftImages} />
+            <div className='flex justify-center mx-auto mt-20 sm:w-2/3'>
+                <GalleryModal images={giftImages} />
             </div>
         </section>
     )

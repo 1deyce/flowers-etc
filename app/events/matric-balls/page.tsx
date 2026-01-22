@@ -1,6 +1,15 @@
-import CarouselOrientation from '@/components/ui/carousel-orientation';
+import GalleryModal from '@/components/ui/gallery-modal';
 import { weddingItems } from '@/utils/weddingItems';
 import BlurFade from '@/components/ui/blur-fade';
+
+// TODO: Add different quote/description specific to matric balls
+// TODO: Update images - add matric ball specific images
+const matricImages = [
+    // Placeholder images - TODO: Replace with actual matric ball images
+    '/weddings/IMG_9772.JPG',
+    '/weddings/IMG_9773.JPG',
+    '/weddings/IMG_9775.JPG'
+];
 
 const Page = ({}) => {
     return (
@@ -13,7 +22,7 @@ const Page = ({}) => {
                 <BlurFade delay={0.10 * 2} inView>
                     <ul className='text-center px-10 mb-10'>
                         {weddingItems.map((item, idx) => (
-                            <li key={idx}>{item.description} from <span className='font-bold'>R {item.price}</span></li>
+                            <li key={idx}>{item.description}</li>
                         ))}
                     </ul>
                 </BlurFade>
@@ -23,7 +32,7 @@ const Page = ({}) => {
                 </div>
             </div> 
             <div className='flex justify-center mx-auto mt-20 sm:w-1/2'>
-                {/* <CarouselOrientation images={mbImages} /> */}
+                <GalleryModal images={matricImages} />
             </div>
         </section>
     )

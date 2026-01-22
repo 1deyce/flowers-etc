@@ -1,40 +1,31 @@
 interface WeddingItem {
-    description: string,
-    price: string
+    description: string
 }
 
 export const weddingItems: WeddingItem[] = [
     {
-        description: "Bridal Bouquets",
-        price: "450"
+        description: "Bridal Bouquets"
     },
     {
-        description: "Bridesmaid Bouquets",
-        price: "300"
+        description: "Bridesmaid Bouquets"
     },
     {
-        description: "Boutonnieres",
-        price: "65"
+        description: "Boutonnieres"
     },
     {
-        description: "Corsages",
-        price: "75"
+        description: "Corsages"
     },
     {
-        description: "Pearl Bracelet Corsages",
-        price: "85"
+        description: "Pearl Bracelet Corsages"
     },
     {
-        description: "Flower Baskets and Flower Crowns",
-        price: "120"
+        description: "Flower Baskets and Flower Crowns"
     },
     {
-        description: "Bridal Table Arrangements",
-        price: "300"
+        description: "Bridal Table Arrangements"
     },
     {
-        description: "Arches",
-        price: "500"
+        description: "Arches"
     },
 
 ] 

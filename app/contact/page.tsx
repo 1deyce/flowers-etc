@@ -4,7 +4,7 @@ import BlurFade from '@/components/ui/blur-fade';
 const Contact = () => {
     return (
         <section className="py-16 px-10 sm:py-40">
-            <div className="mx-auto flex max-w-screen-xl flex-col justify-between gap-10 lg:flex-row lg:gap-20">
+            <div className="mx-auto flex max-w-screen-xl flex-col justify-between gap-10 lg:flex-row lg:gap-20 lg:items-start">
                 <div className="mx-auto flex max-w-md flex-col justify-center gap-10">
                     <div className="text-center lg:text-left">
                         <BlurFade delay={0.25} inView>  
@@ -40,9 +40,11 @@ const Contact = () => {
                         </BlurFade>
                     </div>
                 </div>
-                <BlurFade delay={0.25 * 4} inView>
-                    <ContactForm />
-                </BlurFade>
+                <div className="lg:mt-4">
+                    <BlurFade delay={0.25 * 4} inView>
+                        <ContactForm />
+                    </BlurFade>
+                </div>
             </div>
         </section>
     );
