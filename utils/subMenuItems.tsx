@@ -1,9 +1,10 @@
 import { Gem, Users, Gift, Calendar, Briefcase, Heart, Church, Wrench } from 'lucide-react';
+import { ReactElement } from 'react';
 
 interface SubMenuItem  {
     title: string;
     description: string;
-    icon: JSX.Element;
+    icon: ReactElement;
     href: string;  
     image: string; 
 }
