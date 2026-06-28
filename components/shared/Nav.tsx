@@ -119,9 +119,21 @@ const Nav = () => {
                                         variant: 'linkHover2',
                                     }),
                                 )}
+                                href="/reviews"
+                            >
+                                REVIEWS
+                            </Link>
+                            <Link
+                                className={cn(
+                                    'text-muted-foreground',
+                                    navigationMenuTriggerStyle,
+                                    buttonVariants({
+                                        variant: 'linkHover2',
+                                    }),
+                                )}
                                 href="/contact"
                             >
-                                CONTACT US
+                                CONTACT
                             </Link>
                         </div>
                     </div>
@@ -198,8 +210,11 @@ const Nav = () => {
                                 <Link href="/gifting" className="font-semibold">
                                     GIFTING
                                 </Link>
+                                <Link href="/reviews" className="font-semibold">
+                                    REVIEWS
+                                </Link>
                                 <Link href="/contact" className="font-semibold">
-                                    CONTACT US
+                                    CONTACT
                                 </Link>
                             </div>
                             <div className="border-t pt-4">

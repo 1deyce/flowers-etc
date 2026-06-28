@@ -26,7 +26,7 @@ const reasons = [
     {
         title: 'Customer Care',
         description:
-            'We pride ourselves on providing personalized support and guidance to help you choose the perfect flowers.',
+            'We pride ourselves on providing personalised support and guidance to help you choose the perfect flowers.',
         icon: <CircleHelp className="size-6" />,
     },
     {
@@ -60,12 +60,12 @@ const About = () => {
                 </BlurFade>
             </div>
             <div className="flex justify-center text-center lg:mx-60">
-                <p>I&apos;m Hayley. Owner of a self-run, woman-owned small business called <span className='italic font-bold'>Flowers etc...</span> <br />My business provides a personal service to my clients. From flowers for weddings and functions, to a personalized and corporate gifting service. <br />I also offer a workshop service for those interested in team building or just taking time out. <br /><br /><span className='text-lg'>Can&apos;t wait to be of excellent service to you!</span></p>
+                <p>I&apos;m Hayley. Owner of a self-run, woman-owned small business called <span className='italic font-bold'>Flowers etc...</span> <br />My business provides a personal service to my clients. From flowers for weddings and functions, to a personalised and corporate gifting service. <br />I also offer a workshop service for those interested in team building or just taking time out. <br /><br /><span className='text-lg'>Can&apos;t wait to be of excellent service to you!</span></p>
             </div>
             <div className="mx-auto flex max-w-5xl flex-col items-center pt-16">
                 <div className="mt-32 flex flex-col items-center gap-4">
                     <h2 className="mb-2 text-center text-3xl font-semibold lg:text-5xl">
-                        Our Trusted Clients
+                        Trusted Clients
                     </h2>
                     <div className="flex flex-wrap justify-center items-center mt-10 gap-16">
                         {trustedClients.map((client, idx) => (
