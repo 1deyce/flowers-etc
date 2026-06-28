@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "@/components/shared/Nav";
 import Footer from "@/components/shared/Footer";
 import { Toaster } from "@/components/ui/sonner";
+import PageLoader from "@/components/shared/PageLoader";
 
 export const metadata: Metadata = {
     title: "Flowers Etc...",
@@ -25,6 +26,7 @@ export default function RootLayout({
             <body
                 className={catamaran.className}
             >
+                <PageLoader />
                 <Nav />
                 {children}
                 <Toaster />

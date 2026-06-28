@@ -34,14 +34,14 @@ const Nav = () => {
         <section className="py-10 px-10">
                 <nav className="hidden justify-between lg:flex">
                     <div className="flex items-center gap-6">
-                        <div className="flex items-center gap-2">
+                        <Link href="/" className="flex items-center gap-2">
                             <Image
                                 src={Logo}
                                 className="w-14"
                                 alt="logo"
                             />
                             <span className="text-2xl font-bold">Flowers Etc...</span>
-                        </div>
+                        </Link>
                         <div className="flex items-center">
                             <Link
                                 className={cn(
@@ -119,9 +119,21 @@ const Nav = () => {
                                         variant: 'linkHover2',
                                     }),
                                 )}
+                                href="/reviews"
+                            >
+                                REVIEWS
+                            </Link>
+                            <Link
+                                className={cn(
+                                    'text-muted-foreground',
+                                    navigationMenuTriggerStyle,
+                                    buttonVariants({
+                                        variant: 'linkHover2',
+                                    }),
+                                )}
                                 href="/contact"
                             >
-                                CONTACT US
+                                CONTACT
                             </Link>
                         </div>
                     </div>
@@ -136,14 +148,14 @@ const Nav = () => {
                 </nav>
                 <div className="block lg:hidden">
                     <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-2">
+                        <Link href="/" className="flex items-center gap-2">
                             <Image
                                 src={Logo}
                                 className="w-14"
                                 alt="Flowers Etc."
                             />
                             <span className="text-xl font-bold">Flowers Etc...</span>
-                        </div>
+                        </Link>
                         <Sheet>
                         <SheetTrigger asChild>
                             <Button variant={'outline'} size={'icon'}>
@@ -153,14 +165,14 @@ const Nav = () => {
                         <SheetContent className="overflow-y-auto">
                             <SheetHeader>
                             <SheetTitle>
-                                <div className="flex items-center justify-center gap-2">
+                                <Link href="/" className="flex items-center justify-center gap-2">
                                     <Image
                                         src={Logo}
                                         className="w-8"
                                         alt="Flowers Etc."
                                     />
                                     <span className="text-xl font-bold">Flowers Etc...</span>
-                                </div>
+                                </Link>
                             </SheetTitle>
                             </SheetHeader>
                             <div className="my-8 flex flex-col gap-4">
@@ -198,8 +210,11 @@ const Nav = () => {
                                 <Link href="/gifting" className="font-semibold">
                                     GIFTING
                                 </Link>
+                                <Link href="/reviews" className="font-semibold">
+                                    REVIEWS
+                                </Link>
                                 <Link href="/contact" className="font-semibold">
-                                    CONTACT US
+                                    CONTACT
                                 </Link>
                             </div>
                             <div className="border-t pt-4">

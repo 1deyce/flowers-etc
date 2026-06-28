@@ -15,10 +15,4 @@ export const giftingItems: GiftingItem[] = [
     {
         description: "Snack Hampers"
     },
-    {
-        description: "Personalised Gifts"
-    },
-    {
-        description: "Hampers"
-    },
 ]

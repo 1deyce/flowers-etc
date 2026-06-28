@@ -62,7 +62,7 @@ const GalleryModal: React.FC<GalleryModalProps> = ({ images }) => {
                     onKeyDown={handleKeyDown}
                     tabIndex={0}
                 >
-                    <div className="relative max-w-4xl max-h-full p-4">
+                    <div className="relative flex max-h-full max-w-4xl items-center justify-center p-4">
                         <button
                             onClick={closeModal}
                             className="absolute top-6 right-6 text-white hover:text-gray-300 z-10 bg-black bg-opacity-50 rounded-full p-1"
@@ -92,7 +92,7 @@ const GalleryModal: React.FC<GalleryModalProps> = ({ images }) => {
                             quality={100}
                             priority
                             unoptimized
-                            className="max-w-full max-h-full object-contain"
+                            className="h-auto max-h-[85vh] w-auto max-w-[90vw] object-contain"
                             onClick={(e) => e.stopPropagation()}
                         />
                     </div>

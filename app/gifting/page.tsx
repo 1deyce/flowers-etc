@@ -3,14 +3,9 @@ import BlurFade from '@/components/ui/blur-fade';
 import GalleryModal from '@/components/ui/gallery-modal';
 
 const giftImages = [
-    '/gifting/greenYellowArrangement.jpg',
     '/gifting/arrangements.JPG',
-    '/gifting/posey_3.jpg',
     '/gifting/purple_white_pink.jpg',
-    '/gifting/square_box_posey.jpg',
-    '/gifting/white_flower_posy.jpg',
     '/gifting/arrangements.JPG',
-    '/gifting/IMG_2557.jpg',
     '/gifting/IMG_8230.JPG',
     '/gifting/IMG_8233.JPG',
     '/gifting/new_baby_1.JPG',

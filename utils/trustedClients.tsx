@@ -9,6 +9,14 @@ export const trustedClients: TrustedClient[] = [
         image: "/images/sanlam.avif",
     },
     {
+        title: "Vinimark",
+        image: "/images/vinimark.jpg",
+    },
+    {
+        title: "Sherpa",
+        image: "/images/sherpa.jpg",
+    },
+    {
         title: "Edgemead Primary",
         image: "/images/EdgemeadPrimary.avif",
     },

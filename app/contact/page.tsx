@@ -9,12 +9,12 @@ const Contact = () => {
                     <div className="text-center lg:text-left">
                         <BlurFade delay={0.25} inView>  
                             <h1 className="mb-2 text-5xl font-semibold lg:mb-1 lg:text-6xl">
-                                Contact Us
+                                Contact
                             </h1>
                         </BlurFade>
                         <BlurFade delay={0.25 * 2} inView>  
                             <p className="text-muted-foreground mt-10 p-2 sm:p-0">
-                                Whether you have questions about our arrangements, need advice on your order, or want to discuss collaboration opportunities, we&apos;d love to hear from you. Reach out to us and let us bring a little more beauty to your day!
+                                Whether you have questions about arrangements, need advice on your order, or want to discuss collaboration opportunities, I&apos;d love to hear from you! Reach out and allow me to bring a little more beauty to your day.
                             </p>
                         </BlurFade>
                     </div>
